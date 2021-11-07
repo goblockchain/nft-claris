@@ -1,0 +1,594 @@
+<html class="no-js">
+
+<head>
+    <title>NFT Sun - byGoBlockchain</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="GoBlockchain">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <meta name="description" content="Coleções de 500 NFT criados pela GoBlockchain e armazenados no Ethereum e IPFS.">
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- style sheets and font icons  -->
+    <link rel="stylesheet" type="text/css" href="css/font-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/theme-vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+
+    <!-- <link href="https://www.dafontfree.net/embed/YWR1bXUtcmVndWxhciZkYXRhLzkwL2EvMTY2ODA3L0FkdW11LnR0Zg" rel="stylesheet" type="text/css"/> -->
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107225502-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-107225502-1');
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <!-- start navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light header-light header-reverse-scroll pt-4 pb-4">
+        <div class="container-lg nav-header-container">
+            <div class="col-12 text-center order-2 order-lg-1 text-lg-left col-lg-10 mr-auto pl-lg-0">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/logo-sun-go.png">
+                </a>
+            </div>
+
+            <div class="col-12 col-lg-3 text-center order-1 order-lg-2 text-lg-right pr-0 font-size-0">
+                <div class="social-icon-style-12">
+                    <ul class="extra-small-icon dark">
+                        <li><a class="instagram" href="https://www.github.com/goblockchain" target="_blank"><i
+                                    class="fab fa-github"></i></a></li>
+                        <li><a class="instagram" href="https://www.youtube.com/goblockchain" target="_blank"><i
+                                    class="fab fa-youtube"></i></a></li>
+                        <li><a class="instagram" href="https://medium.com/goblockchain-colabs/" target="_blank"><i
+                                    class="fab fa-medium"></i></a></li>
+                        <li><a class="instagram" href="https://t.me/joinchat/PhXwvVdGOvRiMjUx" target="_blank"><i
+                                    class="fab fa-telegram"></i></a></li>
+                        <li><a class="instagram" href="https://www.instagram.com/goblockchain" target="_blank"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li><a class="instagram" href="https://www.linkedin.com/company/goblockchain" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- start hero section -->
+    <section>
+
+        <div class="container position-relative ">
+            <div class="row justify-content-center">
+                <div
+                    class="col-12 col-xl-6 col-lg-7 col-md-3 mt-5 flex-column justify-content-center position-relative z-index-1 md-landscape-h-600px">
+
+                    <div class="bg-white box-shadow-large padding-1-rem-all bg-transparent-deep-green">
+                        <p> <span class="font-weight-100"> <a
+                                    href="https://metamask.io/download.html" target="_blank" class="btn btn-link hover-link"> 1- Instalar
+                                    Metamask </a></span> <label id="checkMetamask"></label></p>
+                        <p><span class="font-weight-100"><a href="#" class="btn btn-link hover-link" onclick="connect()">2- Conectar
+                                    com Metamask</a></span></p>
+                        <p><span class="font-weight-100">3- Você está na rede: <label id="network"></label> </span></p>
+                        <p><span class="font-weight-100" id="check_balance">4- Saldo: <label id="balance"></label>
+                            </span></p>
+                        <p><span class="font-weight-100">6- Clique no botão logo abaixo para pegar seu NFT 😊</span></p>
+                        <div class="form-group">
+                            <label class="text-left text-dark font-weight-700">Endereço da sua carteira:</label>
+                            <input type="text" id="addressInput" readonly class="form-control">
+                        </div>
+
+                        <button
+                            class="btn btn-large w-100 btn-gradient-goblock d-table d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr"
+                            onclick="buyNow()">Quero um NFT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end hero section -->
+
+
+    <section id="oqueeh" class="cover-background sm-overflow-visible wow animate__fadeIn padding-four-lr"
+        style="visibility: visible; animation-name: fadeIn;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12  text-center">
+
+                    <h4 class="alt-font font-weight-600 text-extra-dark-gray d-inline-block">O que é o NFT Sun ?
+                    </h4>
+
+                    <p>Empoderamento, transparência e eficiência tecnológica são uma das características das
+                        aplicações em Blockchain, as NFT são um exemplo disso. Esse projeto tem fins educacional
+                        para que as pessoas possam entender como usar e criar um <a class="hover-link"
+                            href="https://goblockchain.io/saiba-o-que-significa-nft-e-como-funciona/"
+                            target="_blankp">NFT</a>,
+                        e como funciona o padrão <a class="hover-link" href="https://erc721.org/"
+                            target="_blankp">ERC721</a>.
+                        Queremos que através de ações simples como essas mais pessoas possam se juntar a tecnologias
+                        que utilizam protocolos Blockchain, para que possam perceber o poder da descentralização e
+                        de aplicações descentralizada.
+                        Os NFT criados são um mix de peças que representam nossos valores, saiba mais sobre a
+                        <a class="hover-link" href="https://en.wikipedia.org/wiki/Ethereum"
+                            target="_blankp">GoBlockchain</a>. Atualmente existem 500 peças gratuitas, onde o
+                        será necessário pagar apenas a taxa da rede do Blockchain.
+
+                        Se você acredita que estamos vivenciado uma mudança na internet onde o individual passa a
+                        ser o protogonistas e não apenas um consumidor, junte-se a nós da <a class="hover-link"
+                            href="https://goblockchain.io/" target="_blankp">GoBlockchain</a>.
+                    <p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end hero section -->
+
+    <!-- start section -->
+    <section id="faq" class="cover-background sm-overflow-visible wow animate__fadeIn padding-four-lr">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12  text-center">
+
+                    <h4 class="alt-font font-weight-600 text-extra-dark-gray d-inline-block">FAQ
+                    </h4>
+                </div>
+                <div class="col-12">
+                    <div class="panel-group accordion-event accordion-style-03" id="accordion3"
+                        data-active-icon="fa-angle-down" data-inactive-icon="fa-angle-right">
+
+                        <!-- start accordion item -->
+                        <div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeIn"
+                            data-wow-delay="0.2s">
+                            <div class="panel-heading active-accordion">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3"
+                                    href="#faq01" aria-expanded="true">
+                                    <div class="panel-title text-left">
+                                        <span
+                                            class="alt-font text-extra-dark-gray d-inline-block font-weight-500 text-left">Comprando
+                                            NFT pela primeira vez, como posso começar?</span>
+                                        <i
+                                            class="indicator fas text-extra-dark-gray icon-extra-small fa-angle-down"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="faq01" class="panel-collapse collapse show" data-parent="#accordion3" style="">
+                                <div class="panel-body text-left">Você vai precisar de uma carteira para pagar a
+                                    taxa da rede Blockchain, recomendamos o uso do <a class="hover-link"
+                                        href="https://metamask.io/download.html" target="_blank">MetaMask</a> que é
+                                    uma extensão do Chrome e outros navegadores também. No nosso <a class="hover-link"
+                                        href="https://www.youtube.com/goblockchain" target="_blankp">Youtube</a> você
+                                    vai encontrar um vídeo explicando sobre
+                                    essa instalação.
+                                    Com o Metamask instalado você agora precisa de Ether que pode ser adquirido em
+                                    uma corretora como Fox Bit, Mercado Bitcoin ou NovaDax. Após a compra você vai
+                                    precisar transferir
+                                    o Ether para a sua carteira Metamask. Com o saldo em Ether você precisa apenas
+                                    clicar em "Quero um NFT" e após aprovar você terá a posse de um NFT que pode ser
+                                    adicionado na sua carteira mobile do Metamask.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end accordion item -->
+
+                        <!-- start accordion item -->
+                        <div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeIn"
+                            data-wow-delay="0.2s">
+                            <div class="panel-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3"
+                                    href="#faq02" aria-expanded="false">
+                                    <div class="panel-title text-left">
+                                        <span
+                                            class="alt-font text-extra-dark-gray d-inline-block font-weight-500 text-left">Como
+                                            posso adquiri um NFT com Ether de "mentirinha"?</span>
+                                        <i
+                                            class="indicator fas text-extra-dark-gray icon-extra-small fa-angle-down"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="faq02" class="panel-collapse collapse" data-parent="#accordion3" style="">
+                                <div class="panel-body text-left">Ether de "Mentinha" pode ser chamado também de
+                                    faucets rss. Você deve selecionar a rede de teste <strong>Rinkeby</strong>
+                                    e acessar <a class="hover-link" href="https://faucet.rinkeby.io/"
+                                        target="_blankp">aqui</a>, siga as instruções e no nosso <a class="hover-link"
+                                        href="https://youtube.com/goblockchain" target="_blankp">Youtube</a> também como
+                                    pode realizar esse processo.</div>
+                            </div>
+                        </div>
+                        <!-- end accordion item -->
+
+
+                        <!-- start accordion item -->
+                        <div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeIn"
+                            data-wow-delay="0.2s">
+                            <div class="panel-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3"
+                                    href="#faq03" aria-expanded="false">
+                                    <div class="panel-title text-left">
+                                        <span
+                                            class="alt-font text-extra-dark-gray d-inline-block font-weight-500 text-left">Como
+                                            posso criar um espaço para vendas de NFT?</span>
+                                        <i
+                                            class="indicator fas text-extra-dark-gray icon-extra-small fa-angle-down"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="faq03" class="panel-collapse collapse" data-parent="#accordion3" style="">
+                                <div class="panel-body text-left">A GoBlockchain tem uma solução whitelabel para que
+                                    empresas possam criar seus espaço sem necessidade de desenvolvimento, entre em
+                                    <a href="mailto:contato@goblockchain.io">contato conosco </a> ou via <ma <a
+                                        class="hover-link" href="https://wa.me/11911140564" target="_blankp">
+                                        Whatapps</a> se preferir.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end accordion item -->
+
+                        <!-- start accordion item -->
+                        <div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeIn"
+                            data-wow-delay="0.2s">
+                            <div class="panel-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3"
+                                    href="#faq04" aria-expanded="false">
+                                    <div class="panel-title text-left">
+                                        <span
+                                            class="alt-font text-extra-dark-gray d-inline-block font-weight-500 text-left">O
+                                            que eu posso fazer com meu NFT Sun ?</span>
+                                        <i
+                                            class="indicator fas text-extra-dark-gray icon-extra-small fa-angle-down"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="faq04" class="panel-collapse collapse" data-parent="#accordion3" style="">
+                                <div class="panel-body text-left">Utilize ele em suas redes sociais ou até acesse
+                                    conteúdos exclusivos da GoBlockchain(em breve), mas principalmente curta essa
+                                    momento novo da tecnologia! 😊</div>
+                            </div>
+                        </div>
+                        <!-- end accordion item -->
+
+                        <!-- start accordion item -->
+                        <div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeIn"
+                            data-wow-delay="0.2s">
+                            <div class="panel-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3"
+                                    href="#faq05" aria-expanded="false">
+                                    <div class="panel-title text-left">
+                                        <span
+                                            class="alt-font text-extra-dark-gray d-inline-block font-weight-500 text-left">Dúvidas
+                                            ou sugestões?</span>
+                                        <i
+                                            class="indicator fas text-extra-dark-gray icon-extra-small fa-angle-down"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="faq05" class="panel-collapse collapse" data-parent="#accordion3" style="">
+                                <div class="panel-body text-left">Acesse nosso
+                                    <a class="hover-link" href="https://t.me/joinchat/PhXwvVdGOvRiMjUx"
+                                        target="_blankp">Telegram</a>
+                                    e envie suas dúvidas ou sugestões
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end accordion item -->
+
+                        <!-- start accordion item -->
+                        <div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeIn"
+                            data-wow-delay="0.2s">
+                            <div class="panel-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3"
+                                    href="#faq06" aria-expanded="false">
+                                    <div class="panel-title text-left">
+                                        <span
+                                            class="alt-font text-extra-dark-gray d-inline-block font-weight-500 text-left">Motivo
+                                            do nome NFT Sun?!</span>
+                                        <i
+                                            class="indicator fas text-extra-dark-gray icon-extra-small fa-angle-down"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="faq06" class="panel-collapse collapse" data-parent="#accordion3" style="">
+                                <div class="panel-body text-left">
+                                    ❤️ O nome do projeto <strong>NFT Sun 🌞</strong> é uma homenagem a Clarisse que
+                                    é sinônimo de
+                                    esperança, recomeço, felicidade e energia.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end accordion item -->
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        </div>
+    </section>
+
+    <!-- end section -->
+
+
+    <!-- start footer -->
+
+    <footer class="footer-white bg-white">
+        <div class="footer-bottom padding-40px-tb border-top border-color-white-transparent">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-3 text-center text-md-left sm-margin-20px-bottom">
+                        <a href="index.html" class="footer-logo"><img src="images/logo-sun-go.png" alt=""></a>
+                    </div>
+                    <div class="col-12 col-md-6 text-center last-paragraph-no-margin sm-margin-20px-bottom">
+                        <p>&copy; 2021 Feito com ❤️ por equipe GoBlockchain
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-3 text-center text-md-right">
+                        <div class="social-icon-style-12">
+                            <ul class="extra-small-icon dark">
+                                <li><a class="instagram" href="https://www.github.com/goblockchain" target="_blank"><i
+                                            class="fab fa-github"></i></a></li>
+                                <li><a class="instagram" href="https://www.youtube.com/goblockchain" target="_blank"><i
+                                            class="fab fa-youtube"></i></a></li>
+                                <li><a class="instagram" href="https://medium.com/goblockchain-colabs/"
+                                        target="_blank"><i class="fab fa-medium"></i></a></li>
+                                <li><a class="instagram" href="https://t.me/joinchat/PhXwvVdGOvRiMjUx"
+                                        target="_blank"><i class="fab fa-telegram"></i></a></li>
+                                <li><a class="instagram" href="https://www.instagram.com/goblockchain"
+                                        target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                <li><a class="instagram" href="https://www.linkedin.com/company/goblockchain"
+                                        target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+    </footer>
+    <!-- end footer -->
+    <!-- start scroll to top -->
+    <a class="scroll-top-arrow" href="javascript:void(0);"><i class="feather icon-feather-arrow-up"></i></a>
+    <!-- end scroll to top -->
+    <!-- javascript -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/theme-vendors.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script>
+
+        let currentAccount = null;
+        if (typeof window.ethereum !== 'undefined') {
+            document.querySelector('#checkMetamask').innerHTML = "✅";
+        }
+
+        async function connect() {
+
+            const walletAddress = await window.ethereum.request({
+                method: "eth_requestAccounts",
+                params: [
+                    {
+                        eth_accounts: {}
+                    }
+                ]
+            });
+
+            await window.ethereum.request({
+                method: "wallet_requestPermissions",
+                params: [
+                    {
+                        eth_accounts: {}
+                    }
+                ]
+            });
+
+            console.log(window.ethereum.selectedAddress);
+            loadDatas();
+        }
+
+        async function loadDatas () {
+            await getAccount();
+            await getNetwork();
+            await getBalance();            
+        }
+
+       
+
+        if (typeof window.ethereum !== 'undefined') {
+            loadDatas ();
+        }        
+
+        async function getAccount() {
+            if (typeof window.ethereum == 'undefined') {
+                alert('Você precisa instalar o Metamask para utilizar essa aplicação!');
+                return;
+            }
+            await ethereum.request({ method: 'eth_requestAccounts' });
+            if (ethereum.chainId == 0x1) {
+                alert("Oi! Por enquanto esse projeto não esta habilitado para mainnet :(");
+                console.log("Você está usando uma rede principal");
+                return;
+            }
+            if (ethereum.chainId == 0x4) {
+                console.log("Você está usando uma rede de Teste")
+            }
+            document.querySelector('#addressInput').value = ethereum.selectedAddress;
+        }        
+
+        async function getNetwork() {
+            console.info(ethereum.chainId);
+            if (ethereum.chainId == 0x1) {
+                document.querySelector('#network').innerHTML = "mainnet - principal 🚀";
+                console.log("Você está usando uma rede principal")
+            }
+            if (ethereum.chainId == 0x4) {
+                document.querySelector('#network').innerHTML = "rinkeby - teste 🎢";
+                console.log("Você está usando uma rede de teste")
+            }
+        }
+
+
+        async function getBalance() {
+            console.info("ethereum.selectedAddress" + ethereum.selectedAddress);
+            try {
+                balance = await ethereum
+                    .request({
+                        method: "eth_getBalance",
+                        params: [ethereum.selectedAddress, "latest"],
+                    })
+                // covert to readable format (account for decimals)
+                readBalance = parseInt(balance) / 10 ** 18; // will need change based on what token
+                console.log("Balance:" + readBalance.toFixed(5));
+
+                if (readBalance > 0) {
+                    document.querySelector('#balance').innerHTML = readBalance.toFixed(5) + " 😎";
+                } else {
+                    document.querySelector('#balance').innerHTML = readBalance.toFixed(5) + " 🥴";
+                    $("#check_balance").css('color', 'red');
+                }
+
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        window.ethereum.on('networkChanged', function (accounts) {
+            console.log(accounts[0])
+        });
+
+        window.ethereum.on('notification', function (payload) {
+            console.log("notification");
+        });
+
+        window.ethereum.on('accountsChanged', function (accounts) {
+            loadDatas();
+            console.log("accountsChanged");
+        })
+
+        window.ethereum.on('chainChanged', (chainId) => {
+            window.location.reload();
+            loadDatas();
+        });
+
+
+        // window.ethereum.getBalance(this.account, (err, balance) => {
+        //         alert(window.ethereum.fromWei(balance, "ether") + " ETH")
+        //     });
+
+        // getAccount();
+
+
+        // async function getData() {
+        //     const responseCurrent = await fetch('https://unitedcryptopunks.org/tokens/current-supply');
+        //     const responseTotal = await fetch('https://unitedcryptopunks.org/tokens/total-supply');
+        //     getPrice(1);
+        //     const currentJson = await responseCurrent.json();
+        //     document.querySelector('#currentSupply').innerHTML = currentJson['current_supply'];
+        //     const totalJson = await responseTotal.json();
+        //     document.querySelector('#totalSupply').innerHTML = totalJson['total_supply'];
+        // }
+        // getData()
+
+        // async function getPrice(number) {
+        //     if (number < 21) {
+        //         const responsePrice = await fetch(`https://unitedcryptopunks.org/tokens/price/${number}`);
+        //         const priceJson = await responsePrice.json();
+
+
+        //         console.log(priceJson['price'] / 1000000000000000000);
+
+        //         document.querySelector('#number').innerHTML = number;
+        //         document.querySelector('#price').innerHTML = priceJson['price'] / 1000000000000000000;
+        //     } else {
+        //         alert('Number must be between 1 and 20')
+        //     }
+
+        // }
+
+        // numberI = document.querySelector("#numberInput");
+        // console.log(numberI.value);
+        // numberInput.oninput = function () {
+        //     console.log(numberI.value);
+
+        //     if (numberI.value > 20) {
+        //         console.log(numberI.value, "yes");
+
+        //         numberI.value = numberI = 20;
+        //     }
+        // }
+        async function buyNow() {
+            if (!ethereum.selectedAddress) {
+                alert("Not connected")
+            }
+
+            if (ethereum.chainId == 0x1) {
+                alert("Oi! Por enquanto esse projeto não esta habilitado para mainnet :(");
+                return;
+            }            
+
+            const number = 1;
+            if (!(number >= 1) || !(number <= 20) || !(Number.isInteger(number))) {
+                alert('Number of mint limit 2')
+                return;
+            }
+            const responsePrice = await fetch(`https://unitedcryptopunks.org/tokens/price/${number}`);
+            const priceJson = await responsePrice.json();
+
+            const functionAbi = "d96a094a";
+
+            const actualSize = 2 + functionAbi.length + number.toString(16).length;
+
+            console.log("actualSize" + actualSize);
+
+
+
+            console.log("data: " + "0x" + functionAbi + "0".repeat(74 - actualSize) + number.toString(16));
+
+            var transactionParameters = {
+                from: ethereum.selectedAddress, // User address
+                to: '0x3e2dD7D210Db8C5ab7A4b44B9f1710BC28b8c9fA', // Contract address
+                // "gas": (237840).toString(16), // Gas fee
+                "gas": (number * 240000).toString(16), // Gas fee
+                "value": (Number(priceJson['price'])).toString(16), // Only required to send ether to the recipient from the initiating external account.
+                "data": "0x" + functionAbi + "0".repeat(74 - actualSize) + number.toString(16) // Function  ABI from contract
+            };
+
+            // txHash is a hex string
+            // As with any RPC call, it may throw an error
+            const txHash = ethereum.request({
+                method: 'eth_sendTransaction',
+                params: [transactionParameters],
+            })
+        }
+
+            // getAccount();
+
+
+        // $(function () {
+        //     $('.countdown').on('finish.countdown', function (event) {
+
+        //         $('.before-show').hide();
+        //         $('.after-show').removeClass('d-none');
+        //     });
+        // })
+    </script>
+</body>
+
+</html>
